@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>小米商城</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <!--标准mui.css-->
+        <link rel="stylesheet" href="css/mui.min.css">
+        <!--App自定义的css-->
+        <link rel="stylesheet" type="text/css" href="css/app.css" />
+        <style>
+        body{
+        	font-family: "microsoft yahei";
+        	}
+            .title {
+                margin: 20px 15px 10px;
+                color: #6d6d72;
+                font-size: 15px;
+            }
+            
+            .oa-contact-cell.mui-table .mui-table-cell {
+                padding: 11px 0;
+                vertical-align: middle;
+            }
+            
+            .oa-contact-cell {
+                position: relative;
+                margin: -11px 0;
+            }
+            
+            .oa-contact-avatar {
+                width: 75px;
+            }
+            
+            .oa-contact-avatar img {
+                border-radius: 50%;
+            }
+            
+            .oa-contact-content {
+                width: 100%;
+            }
+            
+            .oa-contact-name {
+                margin-right: 20px;
+            }
+            
+            .oa-contact-name,
+            oa-contact-position {
+                float: left;
+            }
+            .img_webp{
+            	width: 100%;
+            	height: 100%;
+            }
+            .boxt{
+            	width: 100%;
+            	height: 200px;
+            }
+            
+            
+            .p1{
+				font-size: 14px;
+				color: #000; 
+			}
+			 .p2{
+				font-size: 12px;
+				color: #b0b0b0;
+			}
+			 .p3{
+				font-size: 14px;
+				color: #ff5f19;
+			}
+			.product{ 
+				width:100%;
+				position: relative;
+				margin: 20px 0 5px 0;			 
+				height: 100px;
+				background: #fafafa; 
+			}
+			.box-img{
+				float:left;
+				width:100px;
+				height:100%;
+				margin: 0 0 8px 0;
+			}
+			.box-img img{				
+				width:100%;
+				height:100%;
+			}
+			.p{
+				display:inline-block;
+				float:left;
+				width:70%;
+				margin-top:6px; 
+			}
+			.p1{
+			 	margin-top:16px;
+			 	}
+			 
+			 
+			 /*九宫格图*/
+			.jiu{
+				width: 100%;
+				}
+			#img_center{
+				margin: 0 auto;
+				width: 60%; 
+				height: 1100px;
+				text-align: center; 
+				}
+				 
+			#img_center .jiu_box{ 
+				float: left;
+				width: 31%;
+				height: 33.3%;
+				margin-left: 1.7%;
+				}
+				
+			#img_center .box_box{
+				width: 100%;
+				height: 100%; 
+				}
+			#img_center .jiu_box img{
+				width: 100%;
+				height: 97%; 
+				}
+			@media only screen and (max-width: 500px) {
+			  .p{  
+				width:50%;
+			}	
+			
+				#img_center{ 
+				width: 100%; 
+				height: 460px;
+				text-align: center; 
+				}
+			#img_center .box_box{
+				width: 103%;
+				margin-left: -1.7%;
+				}
+            }			
+            }
+        </style>
+    </head>
+
+    <body>
+        <header class="mui-bar mui-bar-nav">
+            <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+            <h1 class="mui-title">小米商城</h1>
+        </header>
+        <nav class="mui-bar mui-bar-tab">
+            <a class="mui-tab-item mui-active" href="#tabbar">
+                <span class="mui-icon mui-icon-home"></span>
+                <span class="mui-tab-label">首页</span>
+            </a>
+            <a class="mui-tab-item" href="#tabbar-with-chat">
+                <span class="mui-icon mui-icon-email"></span>
+                <span class="mui-tab-label">分类</span>
+            </a>
+            <a class="mui-tab-item" href="#tabbar-with-contact">
+                <span class="mui-icon mui-icon-contact"></span>
+                <span class="mui-tab-label">购物车</span>
+            </a>
+            <a class="mui-tab-item" href="#tabbar-with-map">
+                <span class="mui-icon mui-icon-gear"></span>
+                <span class="mui-tab-label">我的</span>
+            </a>
+        </nav>
+        <div class="mui-content">
+            <div id="tabbar" class="mui-control-content mui-active">
+
+                <div id="slider" class="mui-slider">
+                    <div class="mui-slider-group mui-slider-lhttp://127.0.0.1:8020/HTML5_2_1/d06.html#oop">                        
+                         <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+						<div class="mui-slider-item mui-slider-item-duplicate">
+							<a href="#">
+								<img src="images/mo-2.webp" class="img_webp">
+							</a>
+						</div>
+						<!-- 第一张 -->
+						<div class="mui-slider-item">
+							<a href="#">
+								<img src="images/mo-1.webp" class="img_webp">
+							</a>
+						</div>
+						<!-- 第二张 -->
+						<div class="mui-slider-item">
+							<a href="#">
+								<img src="images/mo-2.webp" class="img_webp">
+							</a>
+						</div>
+						 <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+						<div class="mui-slider-item mui-slider-item-duplicate">
+							<a href="#">
+								<img src="images/mo-1.webp" class="img_webp">
+							</a>
+						</div>
+				  
+                    </div>
+                    <!--中间那张美女图-->
+                     <div class="picture">
+						 	<img src="images/mo0.webp" class="img_webp">
+					</div>
+                </div>
+				  <!--中间那张美女图-->
+                     <div class="jiu">
+                     	<div id="img_center">
+                     		<div class="box_box">
+						 	<div class="jiu_box"><img src="images/mo1.webp"></div>
+						 	 <div class="jiu_box"><img src="images/mo2.webp"></div>
+						 	 <div class="jiu_box"><img src="images/mo3.webp"></div>
+						 	 <div class="jiu_box"><img src="images/mo4.webp"></div>
+						 	 <div class="jiu_box"><img src="images/mo5.webp"></div>
+						 	 <div class="jiu_box"><img src="images/mo6.webp"></div>
+						 	 <div class="jiu_box"><img src="images/mo7.webp"></div>
+						 	 <div class="jiu_box"><img src="images/mo8.webp"></div>
+						 	 <div class="jiu_box"><img src="images/mo9.webp"></div> 
+						 	</div> 
+						</div>
+					</div>
+				<!--这个盒子是用来装数据库查出来的商品的-->
+                 <div id="box">
+						 
+				 </div>
+
+            </div>
+
+            <div id="tabbar-with-chat" class="mui-control-content">
+                 2
+            </div>
+            <div id="tabbar-with-contact" class="mui-control-content">
+                 3
+            </div>
+            <div id="tabbar-with-map" class="mui-control-content">
+                 4
+            </div>
+        </div>
+    </body>
+    <script src="js/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/mui.min.js"></script>
+    <script >
+         $(function(){
+			$.get("http://localhost:8080/PictureWeb/pictureServlet",function(result){
+				//result数据添加到表格中;
+				addBox(result);
+			});
+		});
+		function addBox(result){
+			//result是一个集合,所以需要先遍历
+			$.each(result,function(index,obj){
+			 $("#box").append("<div class='product'>"+//获得图片地址					 
+					"<div class='box-img'><img src='http://localhost:8080/PictureWeb/"+obj.url+"'></div>"+	
+							//获得商品名字			 
+						"<div class='p1 p'>"+obj.name+"</div>"+
+							//获得商品描述
+						"<div class='p2 p'>"+obj.descp+"</div>"+
+							//获得商品价格
+						"<div class='p3 p'>"+obj.price+"</div>"+					 	
+	   			"</div>"); 
+			});
+		}
+    </script>
+</html>
